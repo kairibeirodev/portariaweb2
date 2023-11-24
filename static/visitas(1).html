@@ -1,0 +1,124 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portaria App</title>
+    <link rel="icon" href="assets/p-logo-red-1.svg">
+    <link rel="stylesheet" href="style/maintailwind.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/visitas.js" defer></script>
+</head>
+
+<body class="dark:bg-main-dark">
+
+    <header class="h-[8%] w-full shadow-bottom mb-4 bg-white flex items-center justify-between px-4">
+
+        <div id="logo-wrapper">
+            <figure>
+                <img src="./assets/p-logo-red-1.svg" alt="Logo do PortariaApp">
+            </figure>
+        </div>
+        
+        <div id="info-wrapper" class="flex gap-4 mr-[3.5rem]">
+
+            <button id="darkmode-toggle">
+                <figure>
+                    <img src="./assets/forma-de-meia-lua-1.svg" alt="Ícone de lua modo escuro">
+                </figure>
+            </button>
+
+            <h1 id="username">Kathleen Ribeiro</h1>
+
+            <button id="btn-menu">
+                <img src="./assets/botao-de-menu-21.svg" alt="Ícone de menu">
+            </button>
+        </div>
+
+    </header>
+
+    <main class="h-[90%] flex justify-between font-[inter]">
+
+        <aside class="flex ml-6 w-[21.875rem]">
+            <nav class="flex flex-col gap-4">
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark border-2 border-[#FB515E]">
+                    <figure>
+                        <img src="./assets/ico-pesquisa-vermelho.svg" alt="Ícone de uma lupa">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Cartas, Caixas, Visitas e Delivery</h1>
+                </button>
+                
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark border-2 border-[#27D26B]">
+                    <figure>
+                        <img src="./assets/ico-pesquisa-verde.svg" alt="Ícone de uma lupa">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Pesquisar Protocolos</h1>
+                </button>
+
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark">
+                    <figure>
+                        <img src="./assets/ico-quadrodeavisos-1.svg" alt="Ícone de um megafone">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Quadro de Avisos</h1>
+                </button>
+
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark">
+                    <figure>
+                        <img src="./assets/ico-reservas-solicitadas-1.svg" alt="Ícone de um calendário">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Espaços Reservados</h1>
+                </button>
+                
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark">
+                    <figure>
+                        <img src="./assets/ico-visitas-1.svg" alt="Ícone de um visitante">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Visitas Cadastradas</h1>
+                </button>
+
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark">
+                    <figure>
+                        <img src="./assets/ico-pesquisa-veiculos-3.svg" alt="Ícone de um veículo sob uma lupa">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Procurar Veículos</h1>
+                </button>
+                
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark">
+                    <figure>
+                        <img src="./assets/ico-historico-notificacoes-1.svg" alt="Ícone de um sino tocando">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Histórico</h1>
+                </button>
+
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark">
+                    <figure>
+                        <img src="./assets/ico-informe-sindico-1.svg" alt="Ícone relativo ao síndico">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Informe o Síndico</h1>
+                </button>
+                    
+                <button class="btn-primary dark:shadow-button-dark  dark:bg-button-dark">
+                    <figure>
+                        <img src="./assets/ico-multi-1.svg" alt="Ícone relativo à aviso em massa">
+                    </figure>
+                    <h1 class="w-fit dark:text-white">Aviso em Massa</h1>
+                </button>
+
+            </nav>
+        </aside>
+    
+        <section id="wrapper-main-content" class="flex flex-col justify-start items-center w-full gap-5 text-base font-medium">
+        
+            <div id="wrapper-search" class="w-[60.625rem] h-[4.75rem] flex justify-center items-center border-[1px] border-[#9C9999] rounded">
+                <div id="search-container" class="flex gap-[0.81rem] h-min">
+                    <img src="assets/lupa-21.svg" alt="Ícone de busca">
+                    <input type="search" id="search-input" placeholder="Exemplo: CPF" class="outline-0">
+                </div>
+            </div>
+
+            <div id="wrapper-main-info" class="border-[1px] border-[#E1E1E1] rounded w-[60.625rem] h-[47.5rem]">
+                <p class="text-sm text-center w-full mt-[6.75rem]">Digite o <span class="text-[#FB515E] font-bold">Documento Completo</span> Para Localizar o Visitante</p>
+            </div>
+
+        </section>
+    
+    </main>

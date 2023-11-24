@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;    
+
+.btn-primary{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 8%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 5px 5px 6px 1px rgba(55, 111, 255, 0.15);
+}
